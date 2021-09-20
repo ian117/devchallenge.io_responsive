@@ -29,6 +29,9 @@ module.exports = {
       '2xl': '1536px',
     },
     minHeight: {
+      "10min": "10vh",
+      "60min": "60vh",
+      "70min": "70vh",
       "80min": "80vh",
       "90min": "90vh",
     },

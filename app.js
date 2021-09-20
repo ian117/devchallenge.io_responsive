@@ -25,6 +25,12 @@ app.get('/404', (req, res) => {
     res.render(`pages/404`, {context})
 })
 
+app.get('/team-page', (req, res) => {
+    context.title = "Meet The Crew"
+    context.header_title = "Error 404"
+    res.render(`pages/team`, {context})
+})
+
 app.listen(PORT, () => {
     console.log(`Listenning on: http:localhost:${PORT}`)
 })
