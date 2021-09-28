@@ -9,26 +9,83 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/hamburger_menu.css">
     <title>Interior Consultant</title>
 </head>
-<body>
+<body class="font-robo-mono bg-black text-white">
     <header>
-        <div class="menu-wrap">
-            <input type="checkbox" class="toggler">
-            <div class="hamburger"><div></div></div>
-            <div class="menu">
-              <div>
-                <div>
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
+       <nav class="w-screen	flex flex-row justify-between">
+            <!-- Logo -->
+            <div class="w-7/12 md:w-4/12 p-8 ml-2 md:ml-4 flex   items-center justify-start">
+                <div class="p-2 md:p-2 border-2 flex flex-row items-center justify-center">
+                    <h1 class="text-xs md:text-base">This Interior</h1>
                 </div>
-              </div>
             </div>
-          </div>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex w-6/12 p-8 justify-around items-center">
+                <div class="px-0.5 border-b-2 rounded-b-sm border-transparent hover:border-white">
+                    <a href="#">Home </a>
+                </div>
+                <div class="px-0.5 border-b-2 rounded-b-sm border-transparent hover:border-white">
+                    <a href="#">Collection </a>
+                </div>
+                <div class="px-0.5 border-b-2 rounded-b-sm border-transparent hover:border-white">
+                    <a href="#">About </a>
+                </div>
+                <div class="px-0.5 border-b-2 rounded-b-sm border-transparent hover:border-white">
+                    <a href="#">Contact </a>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <!-- <div class="md:hidden bg-yellow-400 w-5/12">
+                <div id="menuToggle" class="">
+                    <input type="checkbox" />
+                    
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    <div id="menuG">
+                        <ul id="menu">
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>About</li></a>
+                            <a href="#"><li>Info</li></a>
+                            <a href="#"><li>Contact</li></a>
+                            <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                          </ul>
+                    </div>
+                </div>
+            </div> -->
+            
+            <div class="md:hidden w-5/12 flex items-center justify-end">
+                
+                <div class="relative pr-2" id="Mobile_menu">
+                
+                    <input type="checkbox" id="openMenu">
+                   
+                    <div id="span_div">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                    <div id="bigMenu">
+                        <div id="flexBigMenu">
+                            <ul id="menuB">
+                                <a href="#"><li>Home</li></a>
+                                <a href="#"><li>About</li></a>
+                                <a href="#"><li>Info</li></a>
+                                <a href="#"><li>Contact</li></a>
+                                <a href="#"><li>Show me more</li></a>
+                              </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+       </nav>
     </header>
 </body>
 </html>
