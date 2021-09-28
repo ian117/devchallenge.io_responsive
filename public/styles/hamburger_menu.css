@@ -126,7 +126,7 @@
   width: 2rem;
   height: 2rem;
   z-index: 20;
-  opacity: 0.3; 
+  opacity: 0; 
 }
 
 #span_div
@@ -210,3 +210,15 @@
 {
  opacity: 1;
 }
+
+#openMenu:checked 
+{
+ z-index: 30;
+}
+
+#openMenu:checked ~ #span_div
+{
+ opacity: 1;
+ z-index: 21;
+}
+
