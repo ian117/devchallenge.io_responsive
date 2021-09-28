@@ -169,7 +169,7 @@
 {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: #FFF;
 }
 
 #Mobile_menu input:checked ~ div span:nth-last-child(3)
@@ -191,7 +191,7 @@
     top: 0;
     left: 0;
     opacity: 0;
-    background-color: #cdcdcd;
+    background-color: #000;
     width: 100vw;
     height: 100vh;
 }
@@ -200,10 +200,13 @@
 {
     display: flex;
     width: 100%;
-    height: 65%;
+    height: 80%;
     justify-content: center;
     align-items: center;
-
+}
+#flexBigMenu ul li 
+{
+    padding: 10px;
 }
 
 #openMenu:checked ~ #bigMenu 
