@@ -204,9 +204,24 @@
     justify-content: center;
     align-items: center;
 }
+#flexBigMenu ul 
+{
+    text-align: center;
+}
+
 #flexBigMenu ul li 
 {
+    
     padding: 10px;
+}
+
+#flexBigMenu ul li:hover 
+{
+
+    border: #cdcdcd;
+    border-bottom: 4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 #openMenu:checked ~ #bigMenu 
