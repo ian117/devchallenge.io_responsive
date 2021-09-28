@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="/styles/hamburger_menu.css">
     <title>Interior Consultant</title>
 </head>
-<body class="font-robo-mono bg-black text-white">
+<body class="relative font-robo-mono bg-black text-white">
     <header>
        <nav class="w-screen	flex flex-row justify-between">
             <!-- Logo -->
-            <div class="w-9/12 md:w-4/12 p-8 ml-2 md:ml-4 flex   items-center justify-start">
+            <div class="w-9/12 md:w-4/12 py-8 pl-4 ml-2 md:ml-2 flex   items-center justify-start">
                 <div class="p-2 md:p-2 border-2 flex flex-row items-center justify-center">
                     <p class="text-xs md:text-base">This Interior</p>
                 </div>
@@ -39,7 +39,7 @@
             <!-- Mobile Menu -->
             <div class="md:hidden w-5/12 flex items-center justify-end">
                 
-                <div class="relative pr-2" id="Mobile_menu">
+                <div class="relative mr-10" id="Mobile_menu">
                 
                     <input type="checkbox" id="openMenu" class="cursor-pinter">
                    
@@ -67,35 +67,63 @@
 
        </nav>
     </header>
-    <main class="mt-4 z-10 w-screen flex justify-center">
-        <div class="w-11/12 flex flex-col md:flex-row">
+    <main id="Main" class="mt-4 md:mt-0 z-10 w-screen flex justify-center min-h-70min">
+        <div class="w-11/12 flex flex-col md:flex-row gap-y-7 gap-x-0 md:gap-y-0 md:gap-x-7">
 
-            <div class="flex flex-col items-start justify-center">
-                <h1 class="text-4xl pb-2">Modern Interior</h1>
-                <div class="w-9/12 pt-4 pb-4">
+            <div class="flex flex-col items-start justify-center md:w-9/12">
+                <h1 class="text-3xl pb-2">Modern Interior</h1>
+                <div class="w-10/12 pt-4 pb-4">
                     <p class="text-base">A full-Service residential & commercial interior design and staginf company offering professional organizing & eco-services</p>
                 </div>
                 
                 <div class=" pt-2">
                     <a href="/decorator-consultant" class=" flex flex-row">
-                        <span class=" pr-2">Read more</span> 
-                        <img id="svgRebel" src="./img/arrow.svg" alt="" class="relative arrow-white pl-2">
+                        <span class=" pr-2 font-bold">Read more</span> 
+                        <img id="svgRebel" src="./img/arrow.svg" alt="" class="relative arrow-white pl-2 font-bold">
                     </a>
                 </div>
                 
             </div>
 
-            <div class="">
-                <p>imagen</p>
-                <p>+</p>
-                <p>imagen</p>
+            <!-- Container -->
+            <div class="w-full mt-4 md:mt-0 md:w-8/12 flex justify-center items-center">
+                
+                <div class="relative w-full">
+                    <img src="./img/decorator1.png" alt="Imagen de decoración" class="object-cover">
+                    
+                    <!-- Card -->
+                    <div id="card1" class="absolute bg-black w-9/12 min-h-30% flex flex-col justify-center items-center gap-y-4">
+                        <div class="pt-4 flex flex-row gap-x-4 w-10/12">
+                            <div class="w-2/12 ">
+                                <img src="./img/decorator2.png" alt="" class="object-cover rounded-full">
+                            </div>
+                            <div class="md:flex md:flex-col md:justify-center">
+                                <p class="text-sm md:text-base font-bold">Aliza Webber</p>
+                                <p class="text-xs md:text-base opacity-90">Interior Designer</p>
+                            </div>
+                        </div>
+
+                        <div class="pb-4 pl-2 w-11/12">
+                            <h2 class="text-base md:text-xl font-semibold">Designed in 2020 by Aliza Webber</h2>
+                        </div>
+                    </div>
+
+                </div>
+                
             </div>
 
         </div>
-
     </main>
+
+    <footer class="w-screen min-h-10min pt-48 pb-4 md:pt-30">
+        <div class="w-full text-center opacity-95">
+            <p>Created By Ian Vass</p>
+        </div>
+    </footer>
+
     <script>
         let svgRebel = document.getElementById('svgRebel')
+        let Main = document.getElementById('Main')
         let openMenu = document.getElementById('openMenu')
 
         openMenu.addEventListener('click', (e) => {
@@ -103,9 +131,11 @@
             if (e.target.checked) {
                 console.log(e.target.checked)
                 svgRebel.classList.add('hidden')
+                Main.classList.add('hidden')
             } else {
                 console.log(e.target.checked)
                 svgRebel.classList.remove('hidden')
+                Main.classList.remove('hidden')
             }
         })
     </script>

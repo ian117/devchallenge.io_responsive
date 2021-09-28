@@ -192,8 +192,8 @@
     left: 0;
     display: none;
     background-color: #000;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 #flexBigMenu 
@@ -252,4 +252,17 @@ display: block;
   position: relative;
   z-index: 1;
   filter: invert(100%) sepia(13%) saturate(7500%) hue-rotate(186deg) brightness(115%) contrast(113%);
+}
+
+#card1
+{
+  top: 80%;
+  left: 20%;
+}
+
+
+#footer
+{
+margin-top:2rem;
+bottom: 20;
 }
