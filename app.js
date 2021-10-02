@@ -43,6 +43,12 @@ app.get('/blog-example', (req, res) => {
     res.render(`pages/blog-page`, {context})
 })
 
+app.get('/masonry-css', (req, res) => {
+    context.title = "Meet The Crew"
+    context.header_title = "Error 404"
+    res.render(`pages/masonry`, {context})
+})
+
 app.get('*', (req, res) => {
     context.title = "Meet The Crew"
     context.header_title = "Error 404"
