@@ -1,0 +1,30 @@
+.masonry_css
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-auto-flow: dense;
+    align-items: end;
+}
+
+.masonry_css div img
+{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#item2 
+{
+    grid-column: span 2;
+}
+
+#item3 
+{
+    grid-column: span 2;
+}
+
+#item4 
+{
+    grid-row: span 2;
+}

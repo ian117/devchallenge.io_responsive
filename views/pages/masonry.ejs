@@ -9,14 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/masonry.css">
     <title>Masonry Css Practice</title>
 </head>
 <body class="font-robo-mono">
     <header></header>
     <main class="w-screen py-8 flex flex-col justify-center items-center">
 
-        <!-- Profile Pic Zone -->
+        <!-- Profile Zone -->
         <div class="w-10/12 flex flex-col justify-center items-center">
+           
+           <!--  Photo + Name & Place -->
             <div class="min-h-6rem max-h-6rem min-w-7rem max-w-7rem mb-4">
                 <img src="/img/masonryPic.png" alt="profilePic" class="rounded-3xl object-cover"
                 >
@@ -28,18 +31,83 @@
 
             <!-- Info Profile 3 Divs -->
 
-            <div class=""></div>
+            <div class="w-full md:w-10/12 lg:w-8/12 mt-6 min-h-2rem flex flex-row justify-center">
+                
+                <div class="w-full flex flex-row justify-center gap-x-6 sm:gap-x-10 md:gap-x-16 lg:gap-x-18">
+                    
+                    <div class="py-1.5 bg-gray-200 rounded-lg text-center" style="width: 100px;">
+                       
+                            <p class="font-semibold	text-black text-opacity-90">100</p>
+                            <p class="text-sm text-black text-opacity-50">Post</p>
+        
+                    </div>
+
+                    <div class="py-1.5 bg-gray-200 rounded-lg text-center" style="width: 100px;">
+                       
+                            <p class="font-semibold	text-black text-opacity-90">2,242</p>
+                            <p class="text-sm text-black text-opacity-50">Followers</p>
+                    
+                    </div>
+
+                    <div class="py-1.5 bg-gray-200 rounded-lg text-center" style="width: 100px;">
+                        <div class="min-w-1rem">
+                            <p class="font-semibold	text-black text-opacity-90">1,432</p>
+                            <p class="text-sm text-black text-opacity-50">Following</p>
+                   
+                    </div>
+                
+                </div>
+
+            </div>
             
         </div>
 
 
         <!-- Masonry Zone -->
+        <!-- At the end, this aproach is not for Fetch Data.
 
-        <div class="w-10/12 flex flex-col justify-center items-center">
-        
+            This is more to Quick! make the solution for the Figma Design
+            If you want to do masonry, a better option is undertanding the 
+            Js behind it or going to Mozilla Dev to learn it good
+        -->
+
+        <div class="py-10 w-10/12 flex flex-col justify-center items-center">
+            
+            <div class="w-full  masonry_css">
+                
+                <div class="h-auto">
+                    <img class="object-cover" src="/img/masonry1.png" alt="">
+                </div>
+
+                <div class="h-auto" id="item2">
+                    <img class="object-cover" src="/img/masonry2.png" alt="">
+                </div>
+
+                <div class="h-auto" id="item3">
+                    <img class="object-cover" src="/img/masonry3.png" alt="">
+                </div>
+
+                <div class="h-auto" id="item4">
+                    <img class="object-cover" src="/img/masonry4.png" alt="">
+                </div>
+
+                <div class="h-auto">
+                    <img class="object-cover" src="/img/masonry5.png" alt="">
+                </div>
+
+                <div class="h-auto">
+                    <img class="object-cover" src="/img/masonry6.png" alt="">
+                </div>
+
+            </div>
+
         </div>
 
     </main>
-    <footer></footer>
+    <footer class="py-2 w-screen flex flex-row justify-center">
+        <div class="w-10/12 flex justify-center">
+            <p class="text-black text-opacity-60">Created by Ian Vass ~ Devchallenges.io</p>
+        </div>
+    </footer>
 </body>
 </html>
